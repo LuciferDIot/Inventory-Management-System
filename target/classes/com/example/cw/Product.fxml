@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="429.0" prefWidth="823.0" style="-fx-background-color: #000000; -fx-border-width: 4; -fx-border-color: #fff;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw.Product.Product">
+   <Button layoutX="37.0" layoutY="343.0" mnemonicParsing="false" onAction="#logout" prefHeight="43.0" prefWidth="121.0" style="-fx-background-color: #000000; -fx-border-color: #fff; -fx-border-radius: 20; -fx-border-width: 4;">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <graphic>
+         <AnchorPane prefHeight="27.0" prefWidth="97.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="2.0" prefHeight="23.0" prefWidth="61.0" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="63.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/logout.png" />
+            </ImageView>
+         </AnchorPane>
+      </graphic>
+   </Button>
+   <Button layoutX="685.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" prefHeight="81.0" prefWidth="129.0" style="-fx-background-color: #000000; -fx-border-radius: 20; -fx-border-width: 4;">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+      <graphic>
+         <AnchorPane prefHeight="20.0" prefWidth="91.0">
+            <ImageView fitHeight="98.0" fitWidth="98.0" layoutX="11.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@images/home.png" />
+            </ImageView>
+         </AnchorPane>
+      </graphic>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </Button>
+   <TableView fx:id="table" layoutX="318.0" layoutY="103.0" prefHeight="284.0" prefWidth="462.0" style="-fx-background-radius: 20;">
+      <columns>
+         <TableColumn fx:id="clmid" prefWidth="43.0" text="ID" />
+         <TableColumn fx:id="Qty" prefWidth="55.79998779296875" text="Qty" />
+         <TableColumn fx:id="clmname" prefWidth="89.0" text="Name" />
+         <TableColumn fx:id="clmnCtgry" prefWidth="90.99996948242188" text="Category" />
+         <TableColumn fx:id="clmDes" prefWidth="183.39996337890625" text="Description" />
+      </columns>
+   </TableView>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="37.0" prefHeight="41.0" prefWidth="300.0" text="PRODUCTS" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="34.0" />
+      </font>
+   </Label>
+   <Button layoutX="37.0" layoutY="103.0" mnemonicParsing="false" onAction="#NewProduct" prefHeight="36.0" prefWidth="253.0" style="-fx-background-color: #000000; -fx-border-color: #fff; -fx-border-radius: 20; -fx-border-width: 4;">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <graphic>
+         <AnchorPane prefHeight="27.0" prefWidth="97.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-6.0" layoutY="3.0" prefHeight="22.0" prefWidth="234.0" text="Add Product" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </AnchorPane>
+      </graphic>
+   </Button>
+   <Button layoutX="37.0" layoutY="167.0" mnemonicParsing="false" onAction="#EditProduct" prefHeight="36.0" prefWidth="253.0" style="-fx-background-color: #000000; -fx-border-color: #fff; -fx-border-radius: 20; -fx-border-width: 4;">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <graphic>
+         <AnchorPane prefHeight="27.0" prefWidth="97.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-6.0" layoutY="3.0" prefHeight="22.0" prefWidth="234.0" text="Edit &amp; Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </AnchorPane>
+      </graphic>
+   </Button>
+   <Button layoutX="37.0" layoutY="230.0" mnemonicParsing="false" onAction="#DeletProduct" prefHeight="36.0" prefWidth="253.0" style="-fx-background-color: #000000; -fx-border-color: #fff; -fx-border-radius: 20; -fx-border-width: 4;">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <graphic>
+         <AnchorPane prefHeight="27.0" prefWidth="97.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-6.0" layoutY="3.0" prefHeight="22.0" prefWidth="234.0" text="Delet Product" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </AnchorPane>
+      </graphic>
+   </Button>
+</AnchorPane>

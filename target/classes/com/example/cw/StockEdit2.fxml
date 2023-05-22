@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw.Stock.StockEdt2">
+   <AnchorPane prefHeight="339.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="380.0" layoutX="193.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="407.0" />
+      <Button defaultButton="true" layoutX="249.0" layoutY="283.0" mnemonicParsing="false" onAction="#EditStck" prefHeight="34.0" prefWidth="135.0" style="-fx-background-radius: 5; -fx-background-color: #dadada; -fx-border-color: #0008ff; -fx-border-radius: 5; -fx-border-width: 2;" text="Edit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="249.0" layoutY="330.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="296.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5; -fx-border-width: 2; -fx-background-color: #dadada;" text="BACK">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <TextField fx:id="UnitPrz" layoutX="249.0" layoutY="121.0" prefHeight="31.0" prefWidth="296.0" promptText="Unit Prize" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-29.0" layoutY="164.0" prefHeight="54.0" prefWidth="256.0" rotate="-68.2" text="STOCK" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="47.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EditQTY" layoutX="249.0" layoutY="175.0" prefHeight="31.0" prefWidth="296.0" promptText="Edit Quantity" />
+      <TextField fx:id="PrdctNm" layoutX="249.0" layoutY="71.0" prefHeight="31.0" prefWidth="296.0" promptText="Product Name" />
+      <TextField fx:id="EditSupplier" layoutX="249.0" layoutY="229.0" prefHeight="31.0" prefWidth="296.0" promptText="Supplier" />
+      <Button defaultButton="true" layoutX="410.0" layoutY="283.0" mnemonicParsing="false" onAction="#SetStock" prefHeight="34.0" prefWidth="135.0" style="-fx-background-radius: 5; -fx-background-color: #dadada; -fx-border-color: #0008ff; -fx-border-radius: 5; -fx-border-width: 2;" text="Set">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="StockID" layoutX="249.0" layoutY="23.0" prefHeight="31.0" prefWidth="296.0" promptText="Search Filed" style="-fx-background-color: #ffe5e5;" />
+   </AnchorPane>
+</Pane>

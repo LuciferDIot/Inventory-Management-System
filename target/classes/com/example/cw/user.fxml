@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw.User">
+   <children>
+      <AnchorPane prefHeight="328.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="325.0" layoutX="193.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="407.0" />
+            <Button defaultButton="true" layoutX="448.0" layoutY="205.0" mnemonicParsing="false" onAction="#EnterUser" prefHeight="34.0" prefWidth="97.0" style="-fx-background-radius: 5; -fx-background-color: #dadada; -fx-border-color: #0008ff; -fx-border-radius: 5; -fx-border-width: 2;" text="Continue">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="248.0" layoutY="261.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="296.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5; -fx-border-width: 2; -fx-background-color: #dadada;" text="BACK">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <TextField fx:id="NUsername" layoutX="249.0" layoutY="30.0" prefHeight="31.0" prefWidth="296.0" promptText="New or Exist Username" />
+            <TextField fx:id="NPassword" layoutX="249.0" layoutY="88.0" prefHeight="31.0" prefWidth="296.0" promptText="New or Exists Password" />
+            <TextField fx:id="CNPassword" layoutX="249.0" layoutY="146.0" prefHeight="31.0" prefWidth="296.0" promptText="Confirm Password" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="114.0" prefHeight="37.0" prefWidth="119.0" text="USER" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="31.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="172.0" prefHeight="37.0" prefWidth="168.0" text="ACCOUNT" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="IncUserName" layoutX="258.0" layoutY="61.0" prefHeight="21.0" prefWidth="287.0" textFill="#ff2828" />
+            <Label fx:id="PasswordID1" layoutX="258.0" layoutY="119.0" prefHeight="21.0" prefWidth="287.0" textFill="#ff2828" />
+            <Label fx:id="PasswordID2" layoutX="258.0" layoutY="177.0" prefHeight="21.0" prefWidth="287.0" textFill="#ff2828" />
+            <Button layoutX="249.0" layoutY="205.0" mnemonicParsing="false" onAction="#delet" prefHeight="34.0" prefWidth="97.0" style="-fx-background-radius: 5; -fx-border-color: ff7d7d; -fx-border-radius: 5; -fx-border-width: 2; -fx-background-color: #dadada;" text="Delete">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

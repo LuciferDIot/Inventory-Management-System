@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="416.0" prefWidth="688.0" style="-fx-border-color: #333333;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw.LoginController">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="6.0" minHeight="0.0" minWidth="0.0" prefHeight="404.0" prefWidth="344.0">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="296.0" layoutX="-6.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fdbff" height="53.0" layoutX="14.0" layoutY="8.0" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="64.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2221ff" height="70.0" layoutX="33.0" layoutY="18.0" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fdbff" height="53.0" layoutX="65.0" layoutY="46.0" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="64.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fdbff" height="53.0" layoutX="223.0" layoutY="345.0" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="64.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2221ff" height="70.0" layoutX="195.0" layoutY="319.0" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fdbff" height="53.0" layoutX="172.0" layoutY="307.0" opacity="0.5" stroke="TRANSPARENT" strokeType="INSIDE" width="64.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="308.0" layoutY="9.0" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="372.0" style="-fx-background-color: #000000; -fx-border-color: #3347ff; -fx-border-width: 6;">
+         <children>
+            <PasswordField fx:id="password" cache="true" layoutX="48.0" layoutY="153.0" prefHeight="34.0" prefWidth="287.0" promptText="Enter your Password" style="-fx-border-radius: 4; -fx-border-width: 1.5; -fx-background-radius: 4;">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="username" layoutX="47.0" layoutY="70.0" prefHeight="34.0" prefWidth="287.0" promptText="Enter your Username" style="-fx-border-radius: 4; -fx-border-width: 1.5; -fx-background-radius: 4;">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="48.0" layoutY="122.0" prefHeight="31.0" prefWidth="287.0" text="Password" textFill="#808dff">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button defaultButton="true" layoutX="44.0" layoutY="248.0" mnemonicParsing="false" onAction="#Singin" prefHeight="34.0" prefWidth="296.0" style="-fx-background-color: #000000; -fx-border-color: #0ef; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2;" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="close_id" cancelButton="true" layoutX="44.0" layoutY="308.0" mnemonicParsing="false" onAction="#close" prefHeight="34.0" prefWidth="296.0" style="-fx-background-color: #000000; padding: 15px 32px; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #ff4747; -fx-border-width: 2;" text="Close" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="48.0" layoutY="39.0" prefHeight="31.0" prefWidth="287.0" text="Username" textFill="#808dff">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="wrong" alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="199.0" prefHeight="34.0" prefWidth="267.0" textFill="#ff2525">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

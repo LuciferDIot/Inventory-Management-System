@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw.Product.ProductDelet">
+   <children>
+      <AnchorPane prefHeight="290.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="290.0" layoutX="193.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="407.0" />
+            <Button defaultButton="true" layoutX="248.0" layoutY="163.0" mnemonicParsing="false" onAction="#DeletCategory" prefHeight="34.0" prefWidth="296.0" style="-fx-background-radius: 5; -fx-background-color: #dadada; -fx-border-color: #0008ff; -fx-border-radius: 5; -fx-border-width: 2;" text="Delete Category">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="248.0" layoutY="218.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="296.0" style="-fx-background-radius: 5; -fx-border-color: #000000; -fx-border-radius: 5; -fx-border-width: 2; -fx-background-color: #dadada;" text="BACK">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <TextField fx:id="DCategory" layoutX="249.0" layoutY="30.0" prefHeight="31.0" prefWidth="296.0" promptText="DelCategory" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-30.0" layoutY="121.0" prefHeight="38.0" prefWidth="253.0" rotate="-52.3" text="CATEGORY" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="41.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CategoryID" layoutX="249.0" layoutY="91.0" prefHeight="31.0" prefWidth="296.0" promptText="Category ID" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cw.Home">
+   <AnchorPane prefHeight="423.0" prefWidth="647.0" style="-fx-background-color: #000000;">
+      <ImageView fitHeight="375.0" fitWidth="433.0" layoutX="213.0">
+         <Image url="@images/OIP.jpg" />
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="381.0" layoutX="216.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" width="430.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="204.0" layoutX="76.0" layoutY="319.0" rotate="60.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aba4a4" height="383.0" layoutX="211.0" opacity="0.59" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" width="435.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="74.0" prefHeight="65.0" prefWidth="183.0" rotate="-30.0" text="INVENTORY" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="148.0" prefHeight="65.0" prefWidth="207.0" rotate="-30.0" text="MANAGEMENT" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="221.0" prefHeight="65.0" prefWidth="181.0" rotate="-30.0" text="SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="383.0" layoutX="211.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="6.0" width="435.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#da0000" height="200.0" layoutX="-77.0" layoutY="-142.0" rotate="60.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="243.0" layoutY="40.0" mnemonicParsing="false" onAction="#user" prefHeight="80.0" prefWidth="174.0" style="-fx-background-radius: 20;" text="Button">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <graphic>
+            <AnchorPane prefHeight="62.0" prefWidth="135.0" style="-fx-border-color: #;">
+               <children>
+                  <ImageView blendMode="DARKEN" fitHeight="65.0" fitWidth="85.0" layoutX="-20.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@images/user.png" />
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="65.0" layoutY="12.0" prefHeight="38.0" prefWidth="65.0" text="USER">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="441.0" layoutY="40.0" mnemonicParsing="false" onAction="#category" prefHeight="80.0" prefWidth="173.0" style="-fx-background-radius: 20;" text="Button">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <graphic>
+            <AnchorPane prefHeight="68.0" prefWidth="135.0" style="-fx-border-color: #;">
+               <children>
+                  <ImageView blendMode="COLOR_BURN" fitHeight="54.0" fitWidth="54.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/cate.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="52.0" layoutY="15.0" prefHeight="38.0" prefWidth="77.0" text="CATEGORY">
+                     <font>
+                        <Font name="Arial Black" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="242.0" layoutY="158.0" mnemonicParsing="false" onAction="#stock" prefHeight="74.0" prefWidth="174.0" style="-fx-background-radius: 20;" text="Button">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <graphic>
+            <AnchorPane prefHeight="62.0" prefWidth="135.0" style="-fx-border-color: #;">
+               <children>
+                  <ImageView blendMode="DARKEN" fitHeight="65.0" fitWidth="78.0" layoutX="-11.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/management.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="68.0" layoutY="15.0" prefHeight="38.0" prefWidth="66.0" text="STOCK">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="438.0" layoutY="158.0" mnemonicParsing="false" onAction="#product" prefHeight="80.0" prefWidth="178.0" style="-fx-background-radius: 20;" text="Button">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <graphic>
+            <AnchorPane prefHeight="62.0" prefWidth="135.0" style="-fx-border-color: #;">
+               <children>
+                  <ImageView blendMode="DARKEN" fitHeight="62.0" fitWidth="63.0" layoutX="-11.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/product.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="56.0" layoutY="15.0" prefHeight="44.0" prefWidth="78.0" text="PRODUCT">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="334.0" layoutY="277.0" mnemonicParsing="false" onAction="#log_out" prefHeight="73.0" prefWidth="172.0" style="-fx-background-radius: 20; -fx-background-color: #000000; -fx-border-color: #fff; -fx-border-radius: 20; -fx-border-width: 4;" text="Button">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <graphic>
+            <AnchorPane prefHeight="62.0" prefWidth="135.0" style="-fx-border-color: #;">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="78.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutY="11.0" prefHeight="38.0" prefWidth="66.0" text="LOG OUT" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </graphic>
+      </Button>
+   </AnchorPane>
+</AnchorPane>
